@@ -1,0 +1,10 @@
+Task: Secure Root SSH Access
+Solution: 
+sudo sed -i 's/PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
+sudo systemctl restart sshd
+
+Related configuration:
+PermitRootLogin no: disable root login
+PasswordAuthentication no: disable password auth
+PubkeyAuthentication yes: enable key-based auth
+Port XXX: change the default port

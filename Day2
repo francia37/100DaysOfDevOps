@@ -1,0 +1,7 @@
+Task: Temporary User Setup with Expiry
+Solution: sudo useradd -m -e 2027-04-15 rose
+
+Related commands: 
+chage: modify user password expiry information
+usermod -e: modify existing user's expiry date
+password -S: check passwords status
